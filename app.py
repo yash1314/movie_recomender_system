@@ -3,8 +3,8 @@ import streamlit as st
 import joblib
 import requests
 
-movies = joblib.load('movie.pkl')
-similarity = joblib.load('similarity.pkl')
+movies = joblib.load('models/movie.pkl')
+similarity = joblib.load('models/similarity.pkl')
 movies_lst = movies['title'].values
 
 def fetch_poster(movie_id):
